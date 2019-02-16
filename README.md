@@ -28,3 +28,23 @@ Consider only the 10 most common overall complaint types.  For the 10 most popul
 aggregate zip code totals. 
 aggregate all the complaints 
 check the complaints for the top ten zip code totals 
+
+Considering all complaint types. Which boroughs are the biggest "complainers" relative to the size of the population in 2017? Meaning, calculate a complaint-index that adjusts for population of the borough.
+* calculcate percentage of complainers. 
+* aggregate complaints per B/ population. 
+
+-- 
+finall instructions 
+
+Notes/hints:
+
+ 
+
+*For the #311 data, programmatically source the data:
+    Use the Socrata Open Data API https://dev.socrata.com/foundry/data.cityofnewyork.us/fhrw-4uyv.
+*For population by #zip code you can use https://blog.splitwise.com/2013/09/18/the-2010-us-census-population-by-zip-code-totally-free/. You can just pretend ZCTA == zip and it's ok that it's 2010 census data
+*Feel free to use other datasets if you find the need. For example, is there a way to clean up "Unspecified" Boroughs?
+
+-- 
+
+
