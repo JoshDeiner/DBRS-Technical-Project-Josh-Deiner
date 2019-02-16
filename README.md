@@ -2,6 +2,7 @@
 Focus: Data sourcing, cleaning, and exploration
 ## Pandas and Jupyter
 
+# Jupiter is environment. Pandas is similar to library. Have JJ display values 
 
 ### Assumptions 
 
