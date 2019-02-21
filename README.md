@@ -1,51 +1,65 @@
 # DBRS-Technical-Project-Josh-Deiner
-Focus: Data sourcing, cleaning, and exploration
-## Pandas and Jupyter
 
-# Jupiter is environment. Pandas is similar to library. Have JJ display values 
 
-### Assumptions 
 
-Consider only the 10 most common overall complaint types
+## Files Directory 
 
-Interepreting this phrase as 10 most common complaints over the entire dataset, ie time period. 
+**complaintsbyborough.ipynb**
+functional
 
-Considering all complaint types. 
-Which boroughs are the biggest "complainers" relative to the size of the population in 2017?
-    =>  Meaning, calculate a complaint-index that adjusts for population of the borough.
-    is this an index or percentage? 
-    whether to aggregate all the number of complaints together based on boroughs. 
-    
-    
-outline 
-setup Socrata, sodapy, pandas for api/data usage
+Contains code intended parse data from xlsx sheet, store data in Pandas DataFrame Object,
+develop dictionaries to be comprised of major complaints and their frequencies, belonging to a specific Borough.
+DataFrames appended to construct full table
+.
 
-Consider only the 10 most common overall complaint types. For each borough, how many of each of those 10 types were there in 2017?
-two ways to approach question. figure way to iterate through data to understand most common complaints
-isolate by B, list complaints in 2017
 
-Consider only the 10 most common overall complaint types.  For the 10 most populous zip codes, how many of each of those 10 types were there in 2017?
+**Population.ipynb**
 
-aggregate zip code totals. 
-aggregate all the complaints 
-check the complaints for the top ten zip code totals 
-
-Considering all complaint types. Which boroughs are the biggest "complainers" relative to the size of the population in 2017? Meaning, calculate a complaint-index that adjusts for population of the borough.
-* calculcate percentage of complainers. 
-* aggregate complaints per B/ population. 
-
--- 
-finall instructions 
-
-Notes/hints:
-
+Non-functional file. 
+Contains code intended parse data from xlsx sheet, store data in Pandas DataFrame Object,
+develop dictionaries to be comprised of major complaints and their frequencies, belonging to a specific zip code.
  
 
-*For the #311 data, programmatically source the data:
-    Use the Socrata Open Data API https://dev.socrata.com/foundry/data.cityofnewyork.us/fhrw-4uyv.
-*For population by #zip code you can use https://blog.splitwise.com/2013/09/18/the-2010-us-census-population-by-zip-code-totally-free/. You can just pretend ZCTA == zip and it's ok that it's 2010 census data
-*Feel free to use other datasets if you find the need. For example, is there a way to clean up "Unspecified" Boroughs?
+**Actions.ipynb**
+Description of functions used and not used.
 
--- 
+functions
 
+get_all_complain_types():
 
+def get_entries_by_year(year):
+
+def group_zips_by_borough():
+
+get_most_popular_complain_types():
+
+**main** 
+
+if __name__ == "__main__":
+	# Get all complaint types
+	complaint_types = get_all_complain_types()
+
+	# Get the number of occurences for each complaint type
+	ct_series = pd.Index(complaint_types)
+
+	# Sort the complaint types by descending order
+	ct_dict = ct_series.value_counts()
+
+	# Get top ten complaint types and store in array
+	top_ten_complaints = ct_dict.keys()[:10]
+	print(top_ten_complaints)
+
+	# Get zip codes and population for each borough
+	borough_zips = group_zips_by_borough()
+	print(borough_zips)
+
+	# Example of getting population for BROOKLYN
+	brooklyn_population = 0
+	for zip_code in borough_zips['BROOKLYN'].keys():
+		brooklyn_population += int(borough_zips['BROOKLYN'][zip_code])
+	print(brooklyn_population)
+
+	# COMMENTED PRINT OUT FOR EASY READABILITY
+	entries = get_entries_by_year(2017)
+	e_df = pd.DataFrame(entries)
+	# print(e_df)
