@@ -116,3 +116,29 @@ def define_pop_of_boroughs():
 # yy
 # sz = np.array(brooklyn_zips)
 # #29 should go
+
+
+
+first_zipcode_table = input_file.loc[input_file.Zip == '60629']
+second_zipcode_table = input_file.loc[input_file.Zip == '79936']
+third_zipcode_table = input_file.loc[input_file.Zip == '11368']
+fourth_zipcode_table = input_file.loc[input_file.Zip == '90650']
+fifth_zipcode_table = input_file.loc[input_file.Zip == '90011']
+sixth_complainer_table = input_file.loc[input_file.Zip == '91331']
+seventh_complainer_table = input_file.loc[input_file.Zip == '11226']
+eighth_complainer_table = input_file.loc[input_file.Zip == '90201']
+nine_complainer_table = input_file.loc[input_file.Zip == '11373']
+ten_complainer_table = input_file.loc[input_file.Zip == '11220']
+
+
+
+first_zipcode_table = deer.loc[deer.Zip == float(60629)]
+second_zipcode_table = deer.loc[deer.Zip == float(79936)]
+third_zipcode_table = deer.loc[deer.Zip == float(11368)]
+fourth_zipcode_table = deer.loc[deer.Zip == float(90650)]
+fifth_zipcode_table = deer.loc[deer.Zip == float(90011)]
+sixth_complainer_table = deer.loc[deer.Zip == float(91331)]
+seventh_complainer_table = deer.loc[deer.Zip == float(11226)]
+eighth_complainer_table = deer.loc[deer.Zip == float(90201)]
+nine_complainer_table = deer.loc[deer.Zip == float(11373)]
+ten_complainer_table = deer.loc[deer.Zip == float(11220)]
