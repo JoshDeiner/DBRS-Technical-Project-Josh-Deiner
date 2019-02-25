@@ -32,9 +32,8 @@
 
 https://docs.google.com/document/d/1EfOuKL55gduaO43aH-P_YyiMiJ9BkcKioAIE99SzZBQ/edit?usp=sharing
 
-Sources Used: 
+<ul>Sources Used</ul>
 
-City Data: 
 
 Zip Code Data: Used 2010 
 https://docs.google.com/spreadsheets/d/1IvwJsQm1vBgU6bvhE_FpiMk9DtIRnd73pjm6SjztP-U/edit?usp=sharing
