@@ -1,10 +1,5 @@
 # DBRS-Technical-Project-Josh-Deiner
 
-Sources Used: 
-
-City Data: 
-
-Zip Code Data: Used 2010
 
 ### Questions To be Answered
 #### Find the Overall Top ten complaints in 2017
@@ -26,3 +21,13 @@ Three remaining questions addressed in the main files:
 #### Could have refactored the zipcode/borough functions into smaller more specific functions
 #### Did Not Address issue of unspecificed boroughs. I would probably look at a relationship between cities and zipcodes and see if there is a correlation.
 #### Their rows cannot be cleaned fully. It would skew the remaining data to elimate the complaints that they reported. 
+
+
+Sources Used: 
+
+City Data: 
+
+Zip Code Data: Used 2010 
+https://docs.google.com/spreadsheets/d/1IvwJsQm1vBgU6bvhE_FpiMk9DtIRnd73pjm6SjztP-U/edit?usp=sharing
+City Data
+https://docs.google.com/spreadsheets/d/1Zptv9x499AXwxmduINqow0QMXeMGzKbsmSsVMISRigI/edit?usp=sharing
