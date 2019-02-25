@@ -1,0 +1,17 @@
+
+
+
+#         if row["Borough"] == "BROOKLYN":
+#             borough_zips["BROOKLYN"].append(row['Incident Zip'])
+
+#         if row["Borough"] == "QUEENS":
+#             borough_zips["QUEENS"].append(row['Incident Zip'])
+
+#         if row["Borough"] == "BRONX":
+#             borough_zips["BRONX"].append(row['Incident Zip'])
+
+#         if row["Borough"] == "STATEN ISLAND":
+#             borough_zips["STATEN ISLAND"].append(row['Incident Zip'])
+
+#         if row["Borough"] == "MANHATTAN":
+#             borough_zips["MANHATTAN"].append(row['Incident Zip'])
