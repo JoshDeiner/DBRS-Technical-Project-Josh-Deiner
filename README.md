@@ -11,8 +11,8 @@
 #### Create a complainers index that is based on the population of the borough and the complaints they reported
 
 --------
-Top Two Questions Addressed Generally.
-Three remaining questions addressed in the main files: 
+### Two Questions Addressed Generally.
+### Three remaining questions addressed in the main files: 
 
 **running_coding/boroughs_top_complaints.ipynb**
 
