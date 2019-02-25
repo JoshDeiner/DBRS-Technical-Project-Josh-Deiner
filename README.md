@@ -32,7 +32,7 @@
 
 https://docs.google.com/document/d/1EfOuKL55gduaO43aH-P_YyiMiJ9BkcKioAIE99SzZBQ/edit?usp=sharing
 
-<ul>Sources Used</ul>
+Sources Used
 
 
 Zip Code Data: Used 2010 
