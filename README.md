@@ -12,9 +12,11 @@
 Top Two Questions Addressed Generally.
 Three remaining questions addressed in the main files: 
 
-**running_coding/boroughs_top_complaints.ipynb
-**running_coding/indexed-value.ipynb
-**running_coding/zipcodes_comparing_complaints.ipynb
+**running_coding/boroughs_top_complaints.ipynb**
+
+**running_coding/indexed-value.ipynb**
+
+**running_coding/zipcodes_comparing_complaints.ipynb**
 
 
 #### Things still to be addressed (unspecified). 
