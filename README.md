@@ -23,6 +23,10 @@ Three remaining questions addressed in the main files:
 #### Their rows cannot be cleaned fully. It would skew the remaining data to elimate the complaints that they reported. 
 
 
+**Visualization of Data Tables: 
+
+https://docs.google.com/document/d/1EfOuKL55gduaO43aH-P_YyiMiJ9BkcKioAIE99SzZBQ/edit?usp=sharing
+
 Sources Used: 
 
 City Data: 
