@@ -1,0 +1,20 @@
+FROM ubuntu:15.04
+COPY . /app
+RUN make /app
+CMD python /app/app.py
+
+
+
+FROM ubuntu:15.04 # creates a layer from the ubuntu:15.04 Docker image.
+
+
+
+COPY . /app #adds files from your Docker client’s current directory.
+
+
+
+RUN make /app #  builds your application with make.
+
+
+
+CMD python /app/app.py # specifies what command to run within the container.
