@@ -1,13 +1,21 @@
-version: '3'
-
-# based off compose-sample-2, only we build nginx.conf into image
-# uses sample site from https://startbootstrap.com/template-overviews/agency/
-
+version: "3"
 services:
-  proxy:
+
+  jupyter:
     build:
-      context: . # process builds contexts for personal dockerfile
-      dockerfile: Dockerfile # could keep custdom or do old fashion way
-      image: josh_image #custom name sets image name
+      context: ./jupyter
     ports:
-      - '80:80'
+      - "9000:9000"
+    links:
+      - postgres
+    volumes:
+          - "./notebooks:/notebooks"
+          - "./data:/data"
+
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: data
+      POSTGRES_PASSWORD: data
+      POSTGRES_DB: data
