@@ -15,8 +15,6 @@ from Actions import city_data_file_read
 
 total_complaints_borough = city_data_file_read.groupby("Borough").size().to_dict()
 
-
-
 def define_borough_zipcodes_obj(): ### check if worked
     si_zips = pd.Series(new_group_boroughs_by_zips()['STATEN ISLAND'])
     bronx_zips = pd.Series(new_group_boroughs_by_zips()['BRONX'])

@@ -30,6 +30,7 @@ def define_zipcode_tables():
 
 
 def nyc_top_complainers():  #****#
+    # obj = {}
     obj = {
     (pop_zip_array[0]): define_base_obj_to_use(),
     pop_zip_array[1]: define_base_obj_to_use(),
@@ -41,14 +42,15 @@ def nyc_top_complainers():  #****#
     pop_zip_array[7]: define_base_obj_to_use(),
     pop_zip_array[8]: define_base_obj_to_use(),
     pop_zip_array[9]: define_base_obj_to_use()
-}
+    }
 
 
     zip_obj = {}
-    for x in range(10): ############# could make helper function
-        zip_obj[pop_zip_array[x]] =  define_zipcode_tables()[x]["Complaint Type"]
-    # ends loops
+    for index in range(10): ############# could make helper function
+        zip_obj[pop_zip_array[index]] =  define_zipcode_tables()[index]["Complaint Type"]
+        # obj[pop_zip_array[x]] = define_base_obj_to_use()
 
+    # ends loops
 
     complainers_obj = define_base_obj_to_use()
     for yy in range(10):
