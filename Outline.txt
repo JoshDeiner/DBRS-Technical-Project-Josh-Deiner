@@ -4,7 +4,6 @@ Remaining things to do
 Have image fully functional. 
 
 Address Edge Cases:
-    ==> Make Data Available on Docker 
     ==> Deal With Tracking unspecificied, not great data entry points
     ==> consider more original ways of impression
     ==> ways to make sql like panda comparison to make up for missing data
@@ -16,3 +15,5 @@ Future Proof:
     
 consider adding special data for unspecified missing data. give rationale for why. throw in boroughs 14 missing data points too. 
 Go extra mile for this scenario. you took extra time. you need to show that it was okay.
+
+#### probably won't need to worry about excel path. they will just be running image in their thing. has nothing to do with me as long as we can handle jupyter complaints
