@@ -20,4 +20,4 @@ RUN pip install import-ipynb
 EXPOSE 8881
 
 # Run the notebook on exposed port
-# CMD ["jupyter", "notebook", "--port=8881"]
+CMD ["jupyter", "notebook", "--port=8881"]
