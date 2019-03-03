@@ -12,7 +12,7 @@ def get_boroughs_table(main_data_df):
     borough_table = {}
     boroughs = get_boroughs(main_data_df)
     for borough in boroughs:
-        borough_table[borough] = main_data_df.loc[main_data_df.Borough == borough]
+        borough_table[borough] = main_data_df.loc[main_data_df.Borough == borough].dropna()
     return borough_table
 
 def get_borough_zipcodes(main_data_df):

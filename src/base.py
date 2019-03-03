@@ -32,7 +32,10 @@ def get_top_complaints(main_data_df, count=10):
     if count > len(popular_complaints):
         print("Count cannot be longer than the number of complaints")
         count = len(popular_complaints)
-    return pd.Series(popular_complaints[:count])
+    if count == -1:
+        return pd.Series(popular_complaints)
+    else:
+        return pd.Series(popular_complaints[:count])
 
 def get_complaints_counter(complaints):
     complaints_counter = {}

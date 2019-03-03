@@ -12,6 +12,7 @@ def get_zipcode_populations(zip_data_df, valid_zipcodes):
     zipcodes_table = {}
     zipcodes = zip_data_df.Zip
     populations = zip_data_df.Population
+
     for i in range (len(zip_data_df.Zip.keys())):
         if zipcodes[i] in valid_zipcodes:
             zipcodes_table[zipcodes[i]] = populations[i]

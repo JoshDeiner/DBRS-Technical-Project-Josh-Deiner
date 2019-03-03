@@ -12,3 +12,5 @@ Address Edge Cases:
 
 unspecificied, utilize city data in case where unspecificied.
 => update burough sheet
+### where burough == unspecificied. check if city is in burough list.
+### if yes, borrough[column][i]= citycolumn[i]
