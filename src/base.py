@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 def get_main_city_data(path='../resources/tocopycitydata.xlsx'):
-    city_data = pd.read_excel(path)
+    city_data = pd.read_excel(path).drop_duplicates(keep='first')
     main_data_df = pd.DataFrame( # drop nas
          {
             "Unique Key"    : city_data["Unique Key"],
@@ -18,7 +18,7 @@ def get_main_city_data(path='../resources/tocopycitydata.xlsx'):
     return main_data_df
 
 def get_city_zip_data(path='../resources/Zips2010_90.xlsx'):
-    zip_data = pd.read_excel(path)
+    zip_data = pd.read_excel(path).drop_duplicates(keep='first')
     zip_df = pd.DataFrame(
         {
             "Zip"           : zip_data["Incident Zips"],
