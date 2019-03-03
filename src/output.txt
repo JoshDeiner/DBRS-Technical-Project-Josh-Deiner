@@ -1,0 +1,40 @@
+                               Zipcode       ...         Illegal Parking
+1  Request Large Bulky Item Collection       ...                       0
+
+[1 rows x 11 columns]
+                Zipcode       ...         Illegal Parking
+2  UNSANITARY CONDITION       ...                       0
+
+[1 rows x 11 columns]
+  Zipcode       ...         Illegal Parking
+3   Noise       ...                       0
+
+[1 rows x 11 columns]
+         Zipcode       ...         Illegal Parking
+4  PAINT/PLASTER       ...                       0
+
+[1 rows x 11 columns]
+    Zipcode       ...         Illegal Parking
+5  PLUMBING       ...                       0
+
+[1 rows x 11 columns]
+            Zipcode       ...         Illegal Parking
+6  Street Condition       ...                       0
+
+[1 rows x 11 columns]
+       Zipcode       ...         Illegal Parking
+7  DOOR/WINDOW       ...                       0
+
+[1 rows x 11 columns]
+          Zipcode       ...         Illegal Parking
+8  HEAT/HOT WATER       ...                       0
+
+[1 rows x 11 columns]
+                  Zipcode       ...         Illegal Parking
+9  Street Light Condition       ...                       0
+
+[1 rows x 11 columns]
+            Zipcode       ...         Illegal Parking
+10  Illegal Parking       ...                       0
+
+[1 rows x 11 columns]

@@ -1,19 +1,15 @@
-Remaining things to do 
+Remaining things to do
 
 
-Have image fully functional. 
+Have image fully functional.
 
 Address Edge Cases:
-    ==> Deal With Tracking unspecificied, not great data entry points
-    ==> consider more original ways of impression
+    ==> Deal With Tracking unspecificied
     ==> ways to make sql like panda comparison to make up for missing data
- 
- 
-Future Proof: 
-    ZipCodes/boroughs. put in logical order. inherit so throughout project(ie in zipcode array
-    
-    
-consider adding special data for unspecified missing data. give rationale for why. throw in boroughs 14 missing data points too. 
-Go extra mile for this scenario. you took extra time. you need to show that it was okay.
 
-#### probably won't need to worry about excel path. they will just be running image in their thing. has nothing to do with me as long as we can handle jupyter complaints
+
+
+
+unspecificied, utilize city data in case where unspecificied.
+=> update burough sheet
+check for general duplicates and remove if they exist.
