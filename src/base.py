@@ -2,49 +2,6 @@ import requests
 import pandas as pd
 import numpy as np
 
-
-def get_raw_data(path='../resources/0311_Service_Requests_from_2010_to_Present.xlsx'):
-    city_data = pd.read_excel(path)
-    # print(city_data)
-    time_year = pd.Timestamp(city_data["Created Date"][0])
-    main_data_df = pd.DataFrame( # drop nas
-         {
-            "Unique Key"    : city_data["Unique Key"],
-            "Year"  : city_data["Created Date"],
-            "Complaint Type": city_data["Complaint Type"],
-            "Zip"           : city_data["Incident Zip"],
-            "Borough"       : city_data["Borough"]
-         }
-    )
-
-
-    # print(main_data_df.loc[(pd.Timestamp(main_data_df.Year).year)])
-# main_data_df.apply()
-    # # set_year_table = city_data.loc[city_data.Year == 2017]
-    main_data_df['Year'].map(lambda x: main_data_df.replace(main_data_df["Year"][x] ,pd.Timestamp(main_data_df["Year"][x]).year))
-
-    return main_data_df
-
-    # return main_data_df.loc[main_data_df.Year == 2017]
-
-    set_year_table = main_data_df.loc[(main_data_df.Year) == 2017]
-    print(set_year_table)
-
-        # city_data["Created Date"] = city_data["Created Date"].map(lamda t: t == 2017 )
-        # where t. year == 2017 append row to variable
-
-
-    # main_data_df = pd.DataFrame( # drop nas
-    #      {
-    #         "Unique Key"    : city_data["Unique Key"],
-    #         "Created Date"  : city_data["Created Date"],
-    #         "Complaint Type": city_data["Complaint Type"],
-    #         "Zip"           : city_data["Incident Zip"],
-    #         "Borough"       : city_data["Borough"]
-    #      }
-    # )
-    # return main_data_df["Created Date"]
-
 def get_main_city_data(path='../resources/311_data_nyc_open_data_year_2017.xlsx'):
     city_data = pd.read_excel(path).drop_duplicates(keep='first')
     main_data_df = pd.DataFrame( # drop nas
@@ -99,4 +56,3 @@ if __name__ == "__main__":
 
     # Examle for getting the zip data in a dataframe
     zip_data_df = get_city_zip_data()
-    raw_data = get_raw_data()
