@@ -1,18 +1,23 @@
-ARG BASE_CONTAINER=jupyter/base-notebook
-# FROM $BASE_CONTAINER
-
 FROM jupyter/base-notebook
 
-WORKDIR /running_coding
+WORKDIR work
 
-COPY . /running_coding
+# Files for jupyter
+COPY notebooks notebooks
+COPY requirements.txt .
 
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
+# For testing purposes
+COPY resources resources
+COPY src src
 
+# Install modules using conda
+RUN conda install --yes --file requirements.txt
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
+# Install module using pip
+RUN pip install import-ipynb
 
+# Expose port from the container
+EXPOSE 8881
 
-# Run python when the container launches
-CMD ["python"]
+# Run the notebook on exposed port
+CMD ["jupyter", "notebook", "--port=8881"]
