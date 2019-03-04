@@ -22,25 +22,11 @@
 
 --------
 
-#### Things still to be addressed (unspecified).
-#### Could have refactored the zipcode/borough functions into smaller more specific functions
-#### Did Not Address issue of unspecificed boroughs. I would probably look at a relationship between cities and zipcodes and see if there is a correlation.
-#### Their rows cannot be cleaned fully. It would skew the remaining data to elimate the complaints that they reported.
-------------
 
-# Data and Resources
-
-**Visualization of Data Tables**:
-
-https://docs.google.com/document/d/1EfOuKL55gduaO43aH-P_YyiMiJ9BkcKioAIE99SzZBQ/edit?usp=sharing
-
-
-
-
-**Zip Code Data: Used 2010**
-
-https://docs.google.com/spreadsheets/d/1IvwJsQm1vBgU6bvhE_FpiMk9DtIRnd73pjm6SjztP-U/edit?usp=sharing
-
-**City_Data**
-
-https://docs.google.com/spreadsheets/d/1Zptv9x499AXwxmduINqow0QMXeMGzKbsmSsVMISRigI/edit?usp=sharing
+Docker pull docker pull joshuadeiner01/city_data_env:version_three
+docker run -p 8889:8889 joshuadeiner01/city_data_env:version_three
+Open up Jupyter in browser with terminal instructions. (Ie, use URL  http://127.0.0.1:8881 with given token)
+Open up Notebooks Directory
+Open up boroughs.ipynb and run all cells
+Open up complaint_index.ipynb  and run all cells # may need to run import lines twice
+Open up zipcodes.ipynb and run all cells  # may need to run import lines twice
