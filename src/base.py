@@ -2,16 +2,15 @@ import requests
 import pandas as pd
 import numpy as np
 
-def get_main_city_data(path='../resources/tocopycitydata.xlsx'):
+
+def get_main_city_data(path='../resources/311_data_nyc_open_data_year_2017.xlsx'):
     city_data = pd.read_excel(path).drop_duplicates(keep='first')
     main_data_df = pd.DataFrame( # drop nas
          {
             "Unique Key"    : city_data["Unique Key"],
             "Created Date"  : city_data["Created Date"],
-            "Closed Date"   : city_data["Closed Date"],
             "Complaint Type": city_data["Complaint Type"],
             "Zip"           : city_data["Incident Zip"],
-            "Status"        : city_data["Status"],
             "Borough"       : city_data["Borough"]
          }
     )
@@ -56,3 +55,5 @@ if __name__ == "__main__":
 
     # Examle for getting the zip data in a dataframe
     zip_data_df = get_city_zip_data()
+
+    print(main_data_df["Created Date"][0][:4])
