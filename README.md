@@ -14,11 +14,13 @@
 ### Two Questions Addressed Generally.
 ### Three remaining questions addressed in the main files:
 
-**running_coding/boroughs_top_complaints.ipynb**
+**running_coding/base.ipynb**
 
-**running_coding/indexed-value.ipynb**
+**running_coding/boroughs.ipynb**
 
-**running_coding/zipcodes_comparing_complaints.ipynb**
+**running_coding/indexed-complaints.ipynb**
+
+**running_coding/zipcodes.ipynb**
 
 --------
 ## To Start up Environment
