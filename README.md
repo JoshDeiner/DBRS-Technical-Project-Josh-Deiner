@@ -23,7 +23,7 @@
 --------
 ## To Start up Environment
 
-**Docker pull docker pull joshuadeiner01/city_data_env:version_three**
+**docker pull joshuadeiner01/city_data_env:version_three**
 
 **docker run -p 8889:8889 joshuadeiner01/city_data_env:version_three**
 
